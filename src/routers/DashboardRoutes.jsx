@@ -1,11 +1,11 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 
-import { DCScreen } from "../DC/DCScreen";
-import { HeroScreen } from "../hero/HeroScreen";
-import { MarvelScreen } from "../Marvel/MarvelScreen";
-import { SearchScreen } from "../search/SearchScreen";
-import { NavBar } from "../ui/NavBar";
+import { DCScreen } from "../components/DC/DCScreen";
+import { HeroScreen } from "../components/hero/HeroScreen";
+import { MarvelScreen } from "../components/Marvel/MarvelScreen";
+import { SearchScreen } from "../components/search/SearchScreen";
+import { NavBar } from "../components/ui/NavBar";
 
 export const DashboardRoutes = () => {
   return (

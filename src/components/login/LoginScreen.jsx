@@ -1,14 +1,33 @@
-import React from "react";
+import React, { useContext } from "react";
 import { LockClosedIcon } from "@heroicons/react/solid";
 import { useNavigate } from "react-router-dom";
 
+import { AuthContext } from "../../auth/authContext";
+import { types } from "../../types/types";
+
 export const LoginScreen = () => {
+  const { dispatch } = useContext(AuthContext);
+
   const navigate = useNavigate();
 
-  const handleLogin = () =>
-    navigate("/marvel", {
+  const handleLogin = () => {
+    const action = {
+      type: types.login,
+      payload: {
+        name: "Carlos Espejel",
+        email: "carlosespejel71@gmail.com",
+        imageUrl: "https://avatars.githubusercontent.com/u/57500554?s=96&v=4",
+      },
+    };
+
+    dispatch(action);
+
+    const lastPath = localStorage.getItem("lastPath") || "/";
+
+    navigate(lastPath, {
       replace: true,
     });
+  };
 
   return (
     <>

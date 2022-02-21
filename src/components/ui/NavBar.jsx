@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { Menu, Disclosure, Transition } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
+
+import { AuthContext } from "../../auth/authContext";
+import { types } from "../../types/types";
 
 const navigation = [
   { name: "Dashboard", href: "/", current: true },
@@ -15,15 +18,14 @@ function classNames(...classes) {
 }
 
 export const NavBar = () => {
-  const user = {
-    name: "Carlos Espejel",
-    email: "carlosespejel71@gmail.com",
-    imageUrl: "https://avatars.githubusercontent.com/u/57500554?s=96&v=4",
-  };
+  const { user, dispatch } = useContext(AuthContext);
 
   const navigate = useNavigate();
 
-  const handleLogout = () => navigate("/login", { replace: true });
+  const handleLogout = () => {
+    dispatch({ type: types.logout });
+    navigate("/login", { replace: true });
+  };
 
   return (
     <>
