@@ -60,6 +60,12 @@ export const NavBar = () => {
                             {item.name}
                           </Link>
                         ))}
+                        <button
+                          className="hover:bg-gray-100 block px-4 py-2 text-sm text-gray-700"
+                          onClick={handleLogout}
+                        >
+                          Logout
+                        </button>
                       </div>
                     </div>
                     <div className="hidden md:block justify-end">

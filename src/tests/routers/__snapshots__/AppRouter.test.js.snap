@@ -1,0 +1,555 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AppRouter should return login if the user is not logged in 1`] = `
+<div
+  className="min-h-full flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8"
+>
+  <div
+    className="max-w-md w-full space-y-8"
+  >
+    <div>
+      <img
+        alt="Workflow"
+        className="mx-auto h-12 w-auto"
+        src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
+      />
+      <h2
+        className="mt-6 text-center text-3xl font-extrabold text-gray-900"
+      >
+        Sign in to your account
+      </h2>
+      <p
+        className="mt-2 text-center text-sm text-gray-600"
+      >
+        Or
+         
+        <span
+          className="font-medium text-indigo-600 hover:text-indigo-500"
+        >
+          start your 14-day free trial
+        </span>
+      </p>
+    </div>
+    <div
+      className="mt-8 space-y-6"
+    >
+      <input
+        defaultValue="true"
+        name="remember"
+        type="hidden"
+      />
+      <div
+        className="rounded-md shadow-sm -space-y-px"
+      >
+        <div>
+          <label
+            className="sr-only"
+            htmlFor="email-address"
+          >
+            Email address
+          </label>
+          <input
+            autoComplete="email"
+            className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
+            id="email-address"
+            name="email"
+            placeholder="Email address"
+            required={true}
+            type="email"
+          />
+        </div>
+        <div>
+          <label
+            className="sr-only"
+            htmlFor="password"
+          >
+            Password
+          </label>
+          <input
+            autoComplete="current-password"
+            className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
+            id="password"
+            name="password"
+            placeholder="Password"
+            required={true}
+            type="password"
+          />
+        </div>
+      </div>
+      <div
+        className="flex items-center justify-between"
+      >
+        <div
+          className="flex items-center"
+        >
+          <input
+            className="h-4 w-4 text-indigo-600 focus:ring-indigo-500 border-gray-300 rounded"
+            id="remember-me"
+            name="remember-me"
+            type="checkbox"
+          />
+          <label
+            className="ml-2 block text-sm text-gray-900"
+            htmlFor="remember-me"
+          >
+            Remember me
+          </label>
+        </div>
+        <div
+          className="text-sm"
+        >
+          <span
+            className="font-medium text-indigo-600 hover:text-indigo-500"
+          >
+            Forgot your password?
+          </span>
+        </div>
+      </div>
+      <div>
+        <button
+          className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+          onClick={[Function]}
+        >
+          <span
+            className="absolute left-0 inset-y-0 flex items-center pl-3"
+          >
+            <svg
+              aria-hidden="true"
+              className="h-5 w-5 text-indigo-500 group-hover:text-indigo-400"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                clipRule="evenodd"
+                d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z"
+                fillRule="evenodd"
+              />
+            </svg>
+          </span>
+          Sign in
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`AppRouter should return the marvel page if the user is logged in 1`] = `
+Array [
+  <div
+    className="min-h-full"
+  >
+    <nav
+      className="bg-gray-800"
+    >
+      <div
+        className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
+      >
+        <div
+          className="flex items-center justify-between h-16"
+        >
+          <div
+            className="flex items-center"
+          >
+            <div
+              className="flex-shrink-0"
+            >
+              <img
+                alt="Workflow"
+                className="h-8 w-8"
+                src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg"
+              />
+            </div>
+            <div
+              className="hidden md:block"
+            >
+              <div
+                className="ml-10 flex items-baseline space-x-4"
+              >
+                <a
+                  aria-current="page"
+                  className="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium"
+                  href="/"
+                  onClick={[Function]}
+                >
+                  Dashboard
+                </a>
+                <a
+                  className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                  href="/marvel"
+                  onClick={[Function]}
+                >
+                  Marvel
+                </a>
+                <a
+                  className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                  href="/dc"
+                  onClick={[Function]}
+                >
+                  DC
+                </a>
+                <a
+                  className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                  href="/search"
+                  onClick={[Function]}
+                >
+                  Search
+                </a>
+                <button
+                  className="hover:bg-gray-100 block px-4 py-2 text-sm text-gray-700"
+                  onClick={[Function]}
+                >
+                  Logout
+                </button>
+              </div>
+            </div>
+            <div
+              className="hidden md:block justify-end"
+            >
+              <div
+                className="ml-4 flex items-center md:ml-6"
+              >
+                <div
+                  className="ml-3 relative"
+                >
+                  <div>
+                    <button
+                      aria-expanded={false}
+                      aria-haspopup={true}
+                      className="max-w-xs bg-gray-800 rounded-full flex items-center text-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+                      id="headlessui-menu-button-1"
+                      onClick={[Function]}
+                      onKeyDown={[Function]}
+                      onKeyUp={[Function]}
+                      type="button"
+                    >
+                      <span
+                        className="sr-only"
+                      >
+                        Open user menu
+                      </span>
+                      <img
+                        alt="Carlos Espejel"
+                        className="h-8 w-8 rounded-full"
+                        src="https://avatars.githubusercontent.com/u/57500554?s=96&v=4"
+                      />
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            className="-mr-2 flex md:hidden"
+          >
+            <button
+              aria-expanded={false}
+              className="bg-gray-800 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+              id="headlessui-disclosure-button-2"
+              onClick={[Function]}
+              onKeyDown={[Function]}
+              onKeyUp={[Function]}
+              type="button"
+            >
+              <span
+                className="sr-only"
+              >
+                Open main menu
+              </span>
+              <svg
+                aria-hidden="true"
+                className="block h-6 w-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M4 6h16M4 12h16M4 18h16"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>,
+  Array [
+    <header
+      className="bg-white shadow"
+    >
+      <div
+        className="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8"
+      >
+        <h1
+          className="text-3xl font-bold text-gray-900"
+        >
+          Marvel Screen
+        </h1>
+      </div>
+    </header>,
+    <div
+      className="container"
+    >
+      <div
+        className="grid grid-cols-1 gap-y-10 sm:grid-cols-2 gap-x-6 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8"
+      >
+        <a
+          className="group"
+          href="/hero/marvel-spider"
+          onClick={[Function]}
+        >
+          <div
+            className="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8"
+          >
+            <img
+              alt="Spider Man"
+              className="w-full h-full object-center object-cover group-hover:opacity-75"
+              src="/assets/img/marvel-spider.jpg"
+            />
+          </div>
+          <h3
+            className="mt-4 text-sm text-gray-700"
+          >
+            Peter Parker
+          </h3>
+          <p
+            className="mt-1 text-lg font-medium text-gray-900"
+          >
+            Spider Man
+          </p>
+        </a>
+        <a
+          className="group"
+          href="/hero/marvel-captain"
+          onClick={[Function]}
+        >
+          <div
+            className="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8"
+          >
+            <img
+              alt="Captain America"
+              className="w-full h-full object-center object-cover group-hover:opacity-75"
+              src="/assets/img/marvel-captain.jpg"
+            />
+          </div>
+          <h3
+            className="mt-4 text-sm text-gray-700"
+          >
+            Steve Rogers
+          </h3>
+          <p
+            className="mt-1 text-lg font-medium text-gray-900"
+          >
+            Captain America
+          </p>
+        </a>
+        <a
+          className="group"
+          href="/hero/marvel-iron"
+          onClick={[Function]}
+        >
+          <div
+            className="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8"
+          >
+            <img
+              alt="Iron Man"
+              className="w-full h-full object-center object-cover group-hover:opacity-75"
+              src="/assets/img/marvel-iron.jpg"
+            />
+          </div>
+          <h3
+            className="mt-4 text-sm text-gray-700"
+          >
+            Tony Stark
+          </h3>
+          <p
+            className="mt-1 text-lg font-medium text-gray-900"
+          >
+            Iron Man
+          </p>
+        </a>
+        <a
+          className="group"
+          href="/hero/marvel-thor"
+          onClick={[Function]}
+        >
+          <div
+            className="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8"
+          >
+            <img
+              alt="Thor"
+              className="w-full h-full object-center object-cover group-hover:opacity-75"
+              src="/assets/img/marvel-thor.jpg"
+            />
+          </div>
+          <h3
+            className="mt-4 text-sm text-gray-700"
+          >
+            Thor Odinson
+          </h3>
+          <p
+            className="mt-1 text-lg font-medium text-gray-900"
+          >
+            Thor
+          </p>
+        </a>
+        <a
+          className="group"
+          href="/hero/marvel-hulk"
+          onClick={[Function]}
+        >
+          <div
+            className="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8"
+          >
+            <img
+              alt="Hulk"
+              className="w-full h-full object-center object-cover group-hover:opacity-75"
+              src="/assets/img/marvel-hulk.jpg"
+            />
+          </div>
+          <h3
+            className="mt-4 text-sm text-gray-700"
+          >
+            Bruce Banner
+          </h3>
+          <p
+            className="mt-1 text-lg font-medium text-gray-900"
+          >
+            Hulk
+          </p>
+        </a>
+        <a
+          className="group"
+          href="/hero/marvel-wolverine"
+          onClick={[Function]}
+        >
+          <div
+            className="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8"
+          >
+            <img
+              alt="Wolverine"
+              className="w-full h-full object-center object-cover group-hover:opacity-75"
+              src="/assets/img/marvel-wolverine.jpg"
+            />
+          </div>
+          <h3
+            className="mt-4 text-sm text-gray-700"
+          >
+            James Howlett
+          </h3>
+          <p
+            className="mt-1 text-lg font-medium text-gray-900"
+          >
+            Wolverine
+          </p>
+        </a>
+        <a
+          className="group"
+          href="/hero/marvel-daredevil"
+          onClick={[Function]}
+        >
+          <div
+            className="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8"
+          >
+            <img
+              alt="Daredevil"
+              className="w-full h-full object-center object-cover group-hover:opacity-75"
+              src="/assets/img/marvel-daredevil.jpg"
+            />
+          </div>
+          <h3
+            className="mt-4 text-sm text-gray-700"
+          >
+            Matthew Michael Murdock
+          </h3>
+          <p
+            className="mt-1 text-lg font-medium text-gray-900"
+          >
+            Daredevil
+          </p>
+        </a>
+        <a
+          className="group"
+          href="/hero/marvel-hawkeye"
+          onClick={[Function]}
+        >
+          <div
+            className="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8"
+          >
+            <img
+              alt="Hawkeye"
+              className="w-full h-full object-center object-cover group-hover:opacity-75"
+              src="/assets/img/marvel-hawkeye.jpg"
+            />
+          </div>
+          <h3
+            className="mt-4 text-sm text-gray-700"
+          >
+            Clinton Francis Barton
+          </h3>
+          <p
+            className="mt-1 text-lg font-medium text-gray-900"
+          >
+            Hawkeye
+          </p>
+        </a>
+        <a
+          className="group"
+          href="/hero/marvel-cyclops"
+          onClick={[Function]}
+        >
+          <div
+            className="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8"
+          >
+            <img
+              alt="Cyclops"
+              className="w-full h-full object-center object-cover group-hover:opacity-75"
+              src="/assets/img/marvel-cyclops.jpg"
+            />
+          </div>
+          <h3
+            className="mt-4 text-sm text-gray-700"
+          >
+            Scott Summers
+          </h3>
+          <p
+            className="mt-1 text-lg font-medium text-gray-900"
+          >
+            Cyclops
+          </p>
+        </a>
+        <a
+          className="group"
+          href="/hero/marvel-silver"
+          onClick={[Function]}
+        >
+          <div
+            className="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8"
+          >
+            <img
+              alt="Silver Surfer"
+              className="w-full h-full object-center object-cover group-hover:opacity-75"
+              src="/assets/img/marvel-silver.jpg"
+            />
+          </div>
+          <h3
+            className="mt-4 text-sm text-gray-700"
+          >
+            Norrin Radd
+          </h3>
+          <p
+            className="mt-1 text-lg font-medium text-gray-900"
+          >
+            Silver Surfer
+          </p>
+        </a>
+      </div>
+    </div>,
+  ],
+]
+`;

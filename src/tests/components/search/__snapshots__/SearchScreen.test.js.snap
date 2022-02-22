@@ -1,0 +1,211 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test <SearchScreen /> should return Batman and input with queryString value 1`] = `
+Array [
+  <header
+    className="bg-white shadow"
+  >
+    <div
+      className="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8"
+    >
+      <h1
+        className="text-3xl font-bold text-gray-900"
+      >
+        Search Screen
+      </h1>
+    </div>
+  </header>,
+  <div
+    className="container grid grid-cols-2"
+  >
+    <form
+      onSubmit={[Function]}
+    >
+      <input
+        className="mt-1 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md text-sm shadow-sm placeholder-slate-400
+ focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500"
+        complete="off"
+        name="searchText"
+        onChange={[Function]}
+        placeholder="Search..."
+        type="text"
+        value="batman"
+      />
+      <button
+        className="mt-5 w-full bg-transparent hover:bg-sky-300 text-sky-700 font-semibold hover:text-white py-2 px-4 border border-sky-500 hover:border-transparent rounded"
+        type="submit"
+      >
+        Search
+      </button>
+    </form>
+    <div
+      className="ml-4"
+    >
+      <h4
+        className="text-xl mb-4"
+      >
+        Results
+      </h4>
+      <a
+        className="group"
+        href="/hero/dc-batman"
+        onClick={[Function]}
+      >
+        <div
+          className="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8"
+        >
+          <img
+            alt="Batman"
+            className="w-full h-full object-center object-cover group-hover:opacity-75"
+            src="/assets/img/dc-batman.jpg"
+          />
+        </div>
+        <h3
+          className="mt-4 text-sm text-gray-700"
+        >
+          Bruce Wayne
+        </h3>
+        <p
+          className="mt-1 text-lg font-medium text-gray-900"
+        >
+          Batman
+        </p>
+      </a>
+    </div>
+  </div>,
+]
+`;
+
+exports[`test <SearchScreen /> should return error if hero doesn't exist 1`] = `
+Array [
+  <header
+    className="bg-white shadow"
+  >
+    <div
+      className="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8"
+    >
+      <h1
+        className="text-3xl font-bold text-gray-900"
+      >
+        Search Screen
+      </h1>
+    </div>
+  </header>,
+  <div
+    className="container grid grid-cols-2"
+  >
+    <form
+      onSubmit={[Function]}
+    >
+      <input
+        className="mt-1 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md text-sm shadow-sm placeholder-slate-400
+ focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500"
+        complete="off"
+        name="searchText"
+        onChange={[Function]}
+        placeholder="Search..."
+        type="text"
+        value="batman123"
+      />
+      <button
+        className="mt-5 w-full bg-transparent hover:bg-sky-300 text-sky-700 font-semibold hover:text-white py-2 px-4 border border-sky-500 hover:border-transparent rounded"
+        type="submit"
+      >
+        Search
+      </button>
+    </form>
+    <div
+      className="ml-4"
+    >
+      <h4
+        className="text-xl mb-4"
+      >
+        Results
+      </h4>
+      <div
+        class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative"
+        role="alert"
+      >
+        <strong
+          class="font-bold"
+        >
+          Holy smokes!
+        </strong>
+        <span
+          class="block sm:inline"
+        >
+           No results for '
+          batman123
+          '.
+        </span>
+      </div>
+    </div>
+  </div>,
+]
+`;
+
+exports[`test <SearchScreen /> should return properly with default values 1`] = `
+Array [
+  <header
+    className="bg-white shadow"
+  >
+    <div
+      className="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8"
+    >
+      <h1
+        className="text-3xl font-bold text-gray-900"
+      >
+        Search Screen
+      </h1>
+    </div>
+  </header>,
+  <div
+    className="container grid grid-cols-2"
+  >
+    <form
+      onSubmit={[Function]}
+    >
+      <input
+        className="mt-1 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md text-sm shadow-sm placeholder-slate-400
+ focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500"
+        complete="off"
+        name="searchText"
+        onChange={[Function]}
+        placeholder="Search..."
+        type="text"
+        value=""
+      />
+      <button
+        className="mt-5 w-full bg-transparent hover:bg-sky-300 text-sky-700 font-semibold hover:text-white py-2 px-4 border border-sky-500 hover:border-transparent rounded"
+        type="submit"
+      >
+        Search
+      </button>
+    </form>
+    <div
+      className="ml-4"
+    >
+      <h4
+        className="text-xl mb-4"
+      >
+        Results
+      </h4>
+      <div
+        class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative"
+        role="alert"
+      >
+        <strong
+          class="font-bold"
+        >
+          Holy smokes!
+        </strong>
+        <span
+          class="block sm:inline"
+        >
+           Search a hero.
+        </span>
+      </div>
+    </div>
+  </div>,
+]
+`;
