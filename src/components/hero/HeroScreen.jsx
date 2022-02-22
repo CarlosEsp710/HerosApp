@@ -1,6 +1,7 @@
 import React, { useMemo } from "react";
 import { Navigate, useNavigate, useParams } from "react-router-dom";
 
+import { heroImages } from "../../helpers/heroImages";
 import { getHeroById } from "../../selectors/getHeroById";
 
 export const HeroScreen = () => {
@@ -23,7 +24,7 @@ export const HeroScreen = () => {
       <div className="max-w-2xl mx-auto pt-10 pb-16 px-4 sm:px-6 lg:max-w-7xl lg:pt-16 lg:pb-24 lg:px-8 lg:grid lg:grid-cols-3 lg:grid-rows-[auto,auto,1fr] lg:gap-x-8">
         <div className="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
           <img
-            src={`/assets/img/${hero.id}.jpg`}
+            src={heroImages(`./${hero.id}.jpg`)}
             alt={hero.superhero}
             className="w-full h-96 object-center object-cover group-hover:opacity-75"
           />
